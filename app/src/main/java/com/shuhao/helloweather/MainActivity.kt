@@ -2,6 +2,7 @@ package com.shuhao.helloweather
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.lifecycle.ViewModel
 
 class MainActivity : AppCompatActivity() {
 
