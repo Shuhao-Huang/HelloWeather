@@ -2,6 +2,7 @@ package com.shuhao.helloweather.logic
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.liveData
+import com.shuhao.helloweather.logic.dao.PlaceDao
 import com.shuhao.helloweather.logic.model.Place
 import com.shuhao.helloweather.logic.model.RealtimeResponse
 import com.shuhao.helloweather.logic.model.Weather
@@ -14,6 +15,12 @@ import java.lang.RuntimeException
 import kotlin.coroutines.CoroutineContext
 
 object Repository {
+
+    fun savePlace(place: Place) = PlaceDao.savePlace(place)
+
+    fun getSavedPlace() = PlaceDao.getSavedPlace()
+
+    fun isPlaceSaved() = PlaceDao.isPlaceSaved()
 
     fun searchPlace(query: String) = fire<List<Place>>(Dispatchers.IO) {
 
