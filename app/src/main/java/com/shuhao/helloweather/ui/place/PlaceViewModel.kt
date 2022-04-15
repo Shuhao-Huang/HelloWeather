@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel
 import com.shuhao.helloweather.logic.Repository
+import com.shuhao.helloweather.logic.model.Location
 import com.shuhao.helloweather.logic.model.Place
 import com.shuhao.helloweather.logic.model.PlaceResponse
 

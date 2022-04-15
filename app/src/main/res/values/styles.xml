@@ -8,4 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="WeatherTheme" parent="AppTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+        <!--单纯的设置@android:color/transparent为透明，发现statusBar显示为白色，activity布局背景并没有向上移动至statusBar，
+        所以接着把activity布局设置为全屏，把decorView的布局设置为全屏。-->
+    </style>
+
 </resources>
